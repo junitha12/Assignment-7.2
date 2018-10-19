@@ -1,0 +1,21 @@
+Write a program to create barplots for all the categorical columns in mtcars.
+> tempMtcars= mtcars
+> tempMtcars$amCategorical= as.factor(mtcars$am)
+> barplot(table(tempMtcars$amCategorical),main="Car_Data",xlab ="Transmission")
+Plot attached separately labelling the name as Assignment7.2_barplot.jpg
+
+
+2. Create a scatterplot matrix by gear types in mtcars dataset.
+data(mtcars)
+pairs(~wt+mpg+disp+cyl+gear+am+hp+drat+vs+qsec+carb,data=mtcars,main="Scatterplot Matrix")
+   Plot attached separately labelling the name as Assignment7.2_scatterplot.jpg     
+
+
+
+3. Write a program to create a plot density by class variable.
+
+x=density(mtcars$mpg)
+plot(x,main="mpg")
+polygon(x, col="blue",border="red")
+
+Plot attached separately in 7.2 repository labelling the name as Assignment 7.2_plot_density.jpg
